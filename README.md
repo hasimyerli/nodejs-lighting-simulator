@@ -11,6 +11,14 @@ Zaman aşımı dolduğunda herhangi bir kullanıcı tarafından tekrar işlem ya
 
 Projenin tüm modül bağımlılıkları package.json dosyasında bulunmaktadır.
 
+
+Kurulum :
+- npm install
+- npm start
+
+İşlemleri sırasıyla yapıldığında server.js localhost:3000 protu üzerinden çalışmaya başlayacaktır.
+
+
 <p align="center">
   <img src="https://hasimyerli.com/projects/images/project-img/l4.png">
 </p>
