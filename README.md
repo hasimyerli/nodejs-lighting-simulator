@@ -11,5 +11,6 @@ Zaman aşımı dolduğunda herhangi bir kullanıcı tarafından tekrar işlem ya
 
 Projenin tüm modül bağımlılıkları package.json dosyasında bulunmaktadır.
 
-{:.center}
-![enter image description here](https://hasimyerli.com/projects/images/project-img/l4.png)
+<p align="center">
+  <img src="https://hasimyerli.com/projects/images/project-img/l4.png">
+</p>
