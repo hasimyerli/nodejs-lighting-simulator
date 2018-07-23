@@ -1,8 +1,0 @@
-# Belirli bir dosyayı es geçmek için
-config.php
-eae.zip
-not.txt
-package-lock.json
-
-# Belirli bir dizini es geçmek için
-node_modules/
