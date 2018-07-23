@@ -1,5 +1,9 @@
 # Lighting Simulator
 
+<p align="center">
+  <img src="https://hasimyerli.com/projects/images/project-img/l2.png">
+</p>
+
 Ev aydınlatma simulatörü. Bu simulatör 12 adet lambadan oluşuyor ve sisteme giren tüm kullanıcılar lambaların üzerlerine tıklayarak açıp kapama işlemi yapabiliyor.
 Açılan ya da kapanan lambalar, üzerlerindeki zaman aşımı süreleri o anda sisteme bağlı olan tüm kullacılara gerçek zamanlı iletiliyor.
 
