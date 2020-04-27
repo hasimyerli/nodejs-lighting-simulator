@@ -3,15 +3,18 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
-});
-
+const PORT = 3000;
+var path = __dirname;
+var staticPath = path + "/public"
 var lampArray = new Array();
+
+app.use(express.static(staticPath));
+
 for (var i = 0; i < 12; i++) {
   lampArray[i] = new Array(true,1,5);//lampArray[0] -> tıklanmayı 5 saniyeliğine bloke etmek için. //lampArray[1] -> lambanın açık kapalı olma durumu //lampArray[2] -> lambanın aktif olması için kalan süre
 }
 
+//socket
 io.on('connection', function(socket) {
   socket.emit('getLampAllStatus',lampArray); //sokete her bağlanan client a lambaların son durumunu gönderir.
   socket.on('clientRequest', function(data) {
@@ -23,6 +26,7 @@ io.on('connection', function(socket) {
     }
   });
 });
+//socket
 
 //lambanın aktif olması için kalan süreyi hesaplar.
 function LampTimer (data,lamp_id) {
@@ -40,6 +44,6 @@ function LampTimer (data,lamp_id) {
   },1000);
 }
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(PORT, () => {
+  console.log('Server listening at port %d', PORT);
 });

@@ -20,11 +20,23 @@ Zaman aşımı dolduğunda herhangi bir kullanıcı tarafından tekrar işlem ya
 Projenin tüm modül bağımlılıkları package.json dosyasında bulunmaktadır.
 
 
-Kurulum :
-- npm install
-- npm start
+### Normal Kurulum :
+> npm install
+
+> npm start
 
 İşlemleri sırasıyla yapıldığında server.js localhost:3000 protu üzerinden çalışmaya başlayacaktır.
+
+
+### Docker ile kurulum
+
+önce image oluşturuyoruz. Burada image ismini farklı verebilirsiniz.
+> docker build -t nodejs-lighting-simulator .
+
+Daha sonra oluşan image ismi ile erişip container çalıştırıyoruz. Portları siz kendinize göre değiştirebilirsiniz.
+> docker run  -p 3000:3000 nodejs-lighting-simulator
+
+İşlemleri sırasıyla yapıldığında localhost:3000 protu üzerinden çalışmaya başlayacaktır.
 
 
 <p align="center">
